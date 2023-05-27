@@ -31,9 +31,9 @@ export default async function Table() {
     <div className="bg-white/30 p-12 shadow-xl ring-1 ring-gray-900/5 rounded-lg backdrop-blur-lg max-w-xl mx-auto w-full">
       <div className="flex justify-between items-center mb-4">
         <div className="space-y-1">
-          <h2 className="text-xl font-semibold">Recent Users</h2>
+          <h2 className="text-xl font-semibold">Usuarios</h2>
           <p className="text-sm text-gray-500">
-            Fetched {users.length} users in {duration}ms
+            Se han encontrado {users.length} usuarios en {duration}ms
           </p>
         </div>
         <RefreshButton />
@@ -54,7 +54,8 @@ export default async function Table() {
               />
               <div className="space-y-1">
                 <p className="font-medium leading-none">{user.name}</p>
-                <p className="text-sm text-gray-500">{user.email}</p>
+                <p className="text-sm text-gray-500">Correo: {user.email}</p>
+                <p className="font-medium leading-none">Contraseña: {user.password}</p>
               </div>
             </div>
             <p className="text-sm text-gray-500">{timeAgo(user.createdAt)}</p>
