@@ -45,7 +45,7 @@ export default async function Table() {
             className="flex items-center justify-between py-3"
           >
             <div className="flex items-center space-x-4">
-              <Image
+              <img
                 src={user.image}
                 alt={user.name}
                 width={48}
@@ -55,7 +55,7 @@ export default async function Table() {
               <div className="space-y-1">
                 <p className="font-medium leading-none">{user.name}</p>
                 <p className="text-sm text-gray-500">Correo: {user.email}</p>
-                <p className="font-medium leading-none">Contraseña: {user.password}</p>
+                <p className="text-sm text-gray-500">Contraseña: {user.password}</p>
               </div>
             </div>
             <p className="text-sm text-gray-500">{timeAgo(user.createdAt)}</p>
