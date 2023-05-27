@@ -30,15 +30,21 @@ export default function Home() {
         <Table />
       </Suspense>
 
-      <div className="flex justify-center space-x-5 pt-10 mt-10 border-t border-gray-300 w-full max-w-xl text-gray-600">
-      <Link
-        href="https://vercel.com/templates/next.js/postgres-starter"
-        className="group mt-20 sm:mt-0 rounded-full flex space-x-1 bg-white/30 shadow-sm ring-1 ring-gray-900/5 text-gray-600 text-sm font-medium px-10 py-2 hover:shadow-lg active:shadow-sm transition-all"
-        >
-          <p>Iniciar sesión</p>
+      <Suspense fallback={<TablePlaceholder />}>
+        {/* @ts-expect-error Async Server Component */}
+        <Table />
+        <div className="flex justify-center space-x-5 pt-10 mt-10 border-t border-gray-300 w-full max-w-xl text-gray-600">
+          <Link
+          href="https://vercel.com/templates/next.js/postgres-starter"
+          className="group mt-20 sm:mt-0 rounded-full flex space-x-1 bg-white/30 shadow-sm ring-1 ring-gray-900/5 text-gray-600 text-sm font-medium px-10 py-2 hover:shadow-lg active:shadow-sm transition-all"
+          >
+          Iniciar sesión
           <ExpandingArrow />
-      </Link>
+        </Link>
       </div>
+      </Suspense>
+
+      
       <div className="sm:absolute sm:bottom-0 w-full px-20 py-10 flex justify-between">
         <Link href=""
         className="flex items-center space-x-2"
