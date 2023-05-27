@@ -15,7 +15,7 @@ export default function Home() {
       
       <h1 className="pt-4 pb-8 bg-gradient-to-br from-black via-[#171717] to-[#575757] bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl">
         Palabra del día de:
-        <Image
+        <Image className="flex items-center"
             src="/logo.svg"
             alt="MIKU Logo"
             width={300}
@@ -23,11 +23,6 @@ export default function Home() {
           />
       </h1>
       <div className="flex justify-center">
-      <Image 
-            src="/miku.png"
-            alt="Miku Sign"
-          />
-        </div>
       <Suspense fallback={<TablePlaceholder />}>
         {/* @ts-expect-error Async Server Component */}
         <Table />
