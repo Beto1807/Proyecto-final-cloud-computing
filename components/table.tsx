@@ -33,7 +33,7 @@ export default async function Table() {
         <div className="space-y-1">
           <h2 className="text-xl font-semibold">Usuarios</h2>
           <p className="text-sm text-gray-500">
-            Encontrado(s) {users.length} usuarios en {duration}ms
+            Se han encontrado {users.length} usuarios en {duration}ms
           </p>
         </div>
         <RefreshButton />
@@ -55,6 +55,7 @@ export default async function Table() {
               <div className="space-y-1">
                 <p className="font-medium leading-none">{user.name}</p>
                 <p className="text-sm text-gray-500">{user.email}</p>
+                <p className="font-medium leading-none">{user.password}</p>
               </div>
             </div>
             <p className="text-sm text-gray-500">{timeAgo(user.createdAt)}</p>
