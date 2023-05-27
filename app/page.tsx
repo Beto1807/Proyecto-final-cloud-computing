@@ -35,11 +35,6 @@ export default function Home() {
           <ExpandingArrow />
       </Link>
       </div>
-      <Image
-            className="flex justify-center"
-            src="miku.png"
-            alt="Miku Sign"
-          />
       <div className="sm:absolute sm:bottom-0 w-full px-20 py-10 flex justify-between">
         <Link href=""
         className="flex items-center space-x-2"
@@ -54,7 +49,7 @@ export default function Home() {
 
           <h2 className="text-xl font-semibold">SAMOS.</h2>
         </Link>
-        
+
         <Link
           href="https://github.com/Beto1807/Proyecto-final-cloud-computing"
           className="flex items-center space-x-2"
