@@ -45,7 +45,7 @@ export default async function Table() {
             className="flex items-center justify-between py-3"
           >
             <div className="flex items-center space-x-4">
-              <Image
+              <img
                 src={user.image}
                 alt={user.name}
                 width={48}
