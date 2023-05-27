@@ -15,12 +15,17 @@ export default function Home() {
       
       <h1 className="pt-4 pb-8 bg-gradient-to-br from-black via-[#171717] to-[#575757] bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl">
         Palabra del día de:
-        <Image
+        <Image width="15%" height="15%"
             src="/logo.svg"
             alt="MIKU Logo"
           />
       </h1>
-      
+      <div className="flex justify-center">
+      <Image 
+            src="/miku.png"
+            alt="Miku Sign"
+          />
+        </div>
       <Suspense fallback={<TablePlaceholder />}>
         {/* @ts-expect-error Async Server Component */}
         <Table />
@@ -35,11 +40,6 @@ export default function Home() {
           <ExpandingArrow />
       </Link>
       </div>
-      <Image
-            className="flex justify-center"
-            src="miku.png"
-            alt="Miku Sign"
-          />
       <div className="sm:absolute sm:bottom-0 w-full px-20 py-10 flex justify-between">
         <Link href=""
         className="flex items-center space-x-2"
