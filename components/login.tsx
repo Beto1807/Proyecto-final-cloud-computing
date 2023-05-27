@@ -1,5 +1,6 @@
 import { sql } from '@vercel/postgres'
 import { timeAgo } from '@/lib/utils'
+import Link from 'next/link'
 import ExpandingArrow from '@/components/expanding-arrow'
 
 export default async function Login() {
