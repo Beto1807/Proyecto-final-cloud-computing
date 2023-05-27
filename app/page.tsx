@@ -53,7 +53,7 @@ export default function Home() {
             priority
           > 
             <h2 className="text-xl font-semibold">SAMOS.</h2>
-          </Image>/>
+          </Image/>
           <p className="font-light">Código</p>
         </Link>
       </div>
