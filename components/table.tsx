@@ -54,7 +54,7 @@ export default async function Table() {
               />
               <div className="space-y-1">
                 <p className="font-medium leading-none">{user.name}</p>
-                <p className="text-sm text-gray-500">Correo: {user.email}</p>
+                <p className="text-sm text-gray-500"><b>Correo: {user.email}</b></p>
                 <p className="text-sm text-gray-500">Contraseña: {user.password}</p>
               </div>
             </div>
