@@ -17,22 +17,22 @@ export async function seed() {
   const users = await Promise.all([
     sql`
           INSERT INTO users (name, password, email, image)
-          VALUES ('Alberto Rodríguez Cázares', 1234, 'L19550796@chihuahua2.tecnm.mx', 'https://github.com/Beto1807/Proyecto-final-cloud-computing/blob/main/pfp/Alberto.jpg')
+          VALUES ('Alberto Rodríguez Cázares', 1234, 'L19550796@chihuahua2.tecnm.mx', 'https://github.com/Beto1807/Proyecto-final-cloud-computing/blob/0e3a58e2a1e6da247d0688dfe42664406ae3ee3d/pfp/Alberto.jpg')
           ON CONFLICT (email) DO NOTHING;
       `,
     sql`
           INSERT INTO users (name, password, email, image)
-          VALUES ('Nicole Johana Bibiano Ochoa', abcd, 'L19550731@chihuahua2.tecnm.mx', 'https://github.com/Beto1807/Proyecto-final-cloud-computing/blob/main/pfp/Nicole.jpg')
+          VALUES ('Nicole Johana Bibiano Ochoa', abcd, 'L19550731@chihuahua2.tecnm.mx', 'https://github.com/Beto1807/Proyecto-final-cloud-computing/blob/0e3a58e2a1e6da247d0688dfe42664406ae3ee3d/pfp/Nicole.jpg')
           ON CONFLICT (email) DO NOTHING;
       `,
     sql`
           INSERT INTO users (name, password, email, image)
-          VALUES ('Jesús David Durán Carrillo', sda343, 'L19540487@chihuahua2.tecnm.mx', 'https://github.com/Beto1807/Proyecto-final-cloud-computing/blob/main/pfp/Jesus.jpg')
+          VALUES ('Jesús David Durán Carrillo', sda343, 'L19540487@chihuahua2.tecnm.mx', 'https://github.com/Beto1807/Proyecto-final-cloud-computing/blob/0e3a58e2a1e6da247d0688dfe42664406ae3ee3d/pfp/Jesus.jpg')
           ON CONFLICT (email) DO NOTHING;
       `,
       sql`
       INSERT INTO users (name, password, email, image)
-      VALUES ('Alexis Sebastián Pereira Luján', miku, 'L19550833@chihuahua2.tecnm.mx', 'https://github.com/Beto1807/Proyecto-final-cloud-computing/blob/main/pfp/Alexis.jpg')
+      VALUES ('Alexis Sebastián Pereira Luján', miku, 'L19550833@chihuahua2.tecnm.mx', 'https://github.com/Beto1807/Proyecto-final-cloud-computing/blob/0e3a58e2a1e6da247d0688dfe42664406ae3ee3d/pfp/Alexis.jpg')
       ON CONFLICT (email) DO NOTHING;
   `,
   ])
