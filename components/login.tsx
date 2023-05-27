@@ -1,6 +1,5 @@
 import { sql } from '@vercel/postgres'
 import { timeAgo } from '@/lib/utils'
-import Image from 'next/image'
 import ExpandingArrow from '@/components/expanding-arrow'
 import RefreshButton from './refresh-button'
 import { seed } from '@/lib/seed'
@@ -63,7 +62,6 @@ export default async function Login() {
           </div>
         ))}
       </div>
-
       <div className="flex justify-center space-x-5 pt-10 mt-10 border-t border-gray-300 w-full max-w-xl text-gray-600">
           <Link
           href="https://vercel.com/templates/next.js/postgres-starter"
@@ -73,7 +71,6 @@ export default async function Login() {
           <ExpandingArrow />
         </Link>
       </div>
-
     </div>
   )
 }
