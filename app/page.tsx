@@ -32,7 +32,9 @@ export default function Home() {
       </div>
 
       <div className="sm:absolute sm:bottom-0 w-full px-20 py-10 flex justify-between">
-        <Link href="">
+        <Link href=""
+        className="flex items-center space-x-2"
+        >
           <Image
             src="/samos.svg"
             alt="SAMOS Logo"
@@ -40,7 +42,10 @@ export default function Home() {
             height={50}
             priority
           />
+
+          <h2 className="text-xl font-semibold">SAMOS.</h2>
         </Link>
+        
         <Link
           href="https://github.com/Beto1807/Proyecto-final-cloud-computing"
           className="flex items-center space-x-2"
@@ -51,9 +56,8 @@ export default function Home() {
             width={24}
             height={24}
             priority
-          > 
-            <h2 className="text-xl font-semibold">SAMOS.</h2>
-          </Image/>
+          /> 
+            
           <p className="font-light">Código</p>
         </Link>
       </div>
