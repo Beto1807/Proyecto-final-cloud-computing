@@ -16,17 +16,13 @@ export default function Home() {
       <h1 className="pt-4 pb-8 bg-gradient-to-br from-black via-[#171717] to-[#575757] bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl">
         Palabra del día de: 
       </h1> 
-      <div className="flex items-center">
+      <div className="flex items-center" style="margin: 50px;">
         <Image 
             src="/logo.svg"
             alt="MIKU Logo"
             width={300}
             //height={15}
           />
-      </div>
-
-      <div className="flex items-center">
-      <p>  </p>
       </div>
       
       <Suspense fallback={<TablePlaceholder />}>
