@@ -22,7 +22,6 @@ export default function Home() {
             //height={15}
           />
       </h1>
-      <div className="flex justify-center">
       <Suspense fallback={<TablePlaceholder />}>
         {/* @ts-expect-error Async Server Component */}
         <Table />
