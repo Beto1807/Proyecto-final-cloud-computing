@@ -22,7 +22,7 @@ export default async function Login() {
   return (
     <div className="p-12 shadow-xl ring-1 ring-gray-900/5 rounded-lg backdrop-blur-lg max-w-xl mx-auto w-full bg-palabra">
         {palabrasHoy.map((palabraHoy) => (
-          <p key={palabraHoy.palabra} className="font-medium leading-none miku-p"><b>Hatsune Miku dice: </b> <br/> "{palabraHoy.palabra}"</p>
+          <p key={palabraHoy.palabra} className="font-medium leading-none miku-p"><b>Hatsune Miku dice: </b> <br/> &ldquo;{palabraHoy.palabra}&rdquo;</p>
         ))}
     </div>
   )
