@@ -2,6 +2,10 @@ import { sql } from '@vercel/postgres'
 import { timeAgo } from '@/lib/utils'
 import Link from 'next/link'
 import ExpandingArrow from '@/components/expanding-arrow'
+import { useRouter } from 'next/navigation'
+import { useTransition } from 'react'
+const router = useRouter()
+const [isPending, startTransition] = useTransition()
 
 export default async function Login() {
 
@@ -16,7 +20,21 @@ export default async function Login() {
           Iniciar sesión
           <ExpandingArrow />
         </Link>
-        <RefreshButton />
+        
+        <button
+          className={`${
+            isPending ? 'cursor-not-allowed text-gray-400' : ''
+          } text-sm text-gray-500 hover:text-gray-900`}
+          disabled={isPending}
+          onClick={() => {
+            startTransition(() => {
+              router.refresh()
+            })
+          }}
+        >
+      {isPending ? 'Actualizando...' : 'Actualizar'}
+    </button>
+
       </div>
     </div>
   )
