@@ -23,3 +23,9 @@ body {
   border-radius: 16px;
   padding: 6px;
 }
+p {
+    background-color: #00ffff45;
+    color: black;
+    border-radius: 16px;
+    padding: 6px;
+}
