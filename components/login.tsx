@@ -70,7 +70,7 @@ export default async function Login() {
             >
               <div className="flex items-center">
                 <div className="space-y-1">
-                  <p className="font-medium leading-none"><b>Miku dice: </b>{palabraHoy.palabra}</p>
+                  <p className="font-medium leading-none"><b>Hatsune Miku dice: </b>{palabraHoy.palabra}</p>
                 </div>
               </div>
             </div>
