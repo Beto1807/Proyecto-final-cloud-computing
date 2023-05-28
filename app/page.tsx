@@ -5,7 +5,6 @@ import Table from '@/components/table'
 import Login from '@/components/login'
 import TablePlaceholder from '@/components/table-placeholder'
 import ExpandingArrow from '@/components/expanding-arrow'
-import Player from '@/components/mp3';
 
 export const runtime = 'edge'
 export const preferredRegion = 'home'
@@ -36,11 +35,6 @@ export default function Home() {
           {/* @ts-expect-error Async Server Component */}
           <Table />
         </Suspense>
-      </div>
-
-      <div>
-        <h1>Reproductor MP3</h1>
-        <Player />
       </div>
       
       <div className="sm:absolute sm:bottom-0 w-full px-20 py-10 flex justify-between">
