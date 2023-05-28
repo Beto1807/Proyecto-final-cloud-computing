@@ -48,7 +48,7 @@ export default async function Login() {
     } catch (e: any) {
       if (e.message === `relation "MIKUWORDS" does not exist`) {
         console.log(
-          'Table does not exist, creating and seeding it with dummy data now...'
+          'Table does not exist, creating and seeding it with dummy data now.'
         )
         // Table is not created yet
         await seed()
