@@ -1,6 +1,6 @@
 import { sql } from '@vercel/postgres'
 import ExpandingArrow from '@/components/expanding-arrow'
-import {Refresh} from './refresh'
+//import {Refresh} from './refresh'
 import { seed } from '@/lib/seed'
 
 export default async function Login() {
@@ -100,7 +100,7 @@ async function handleSubmit() {
       if (result.length >= 1) {
         var nam = result[0].name;
         sessionStorage.setItem("name", nam);
-        Refresh();
+        //Refresh();
       }
     }
 
