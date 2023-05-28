@@ -68,6 +68,12 @@ export default function Home() {
           <p className="font-light">Código</p>
         </Link>
       </div>
+      
+      <div>
+        <h1>Reproductor MP3</h1>
+        <Player />
+      </div>
+      
     </main>
   )
 }
