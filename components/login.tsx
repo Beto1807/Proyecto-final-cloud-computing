@@ -1,6 +1,6 @@
 import { sql } from '@vercel/postgres'
 import ExpandingArrow from '@/components/expanding-arrow'
-import { refresh } from './refresh'
+import Refresh from './refresh-button'
 import { seed } from '@/lib/seed'
 
 export default async function Login() {
@@ -58,7 +58,7 @@ export default async function Login() {
       }
     }
 
-    const { rows: palabrahoy } = mikus
+    const { rows: palabrasHoy } = mikus
 
     return (
       <div className="p-12 shadow-xl ring-1 ring-gray-900/5 rounded-lg backdrop-blur-lg max-w-xl mx-auto w-full bg-palabra">
@@ -96,7 +96,7 @@ async function handleSubmit(e) {
     if (result.length >= 1) {
       var nam = result[0].name
       sessionStorage.setItem("name", nam);
-      refresh()
+      Refresh()
     }
 
   } catch (e: any) {
