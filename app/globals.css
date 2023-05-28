@@ -23,7 +23,7 @@ body {
   border-radius: 16px;
   padding: 6px;
 }
-p.text-sm.text-gray-500 {
+p {
     background-color: #00ffff45;
     color: black;
     border-radius: 16px;
