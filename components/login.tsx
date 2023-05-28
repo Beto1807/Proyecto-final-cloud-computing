@@ -21,20 +21,9 @@ export default async function Login() {
 
   return (
     <div className="p-12 shadow-xl ring-1 ring-gray-900/5 rounded-lg backdrop-blur-lg max-w-xl mx-auto w-full bg-palabra">
-      <div className="divide-y divide-gray-900/5">
         {palabrasHoy.map((palabraHoy) => (
-          <div
-            key={palabraHoy.palabra}
-            className="flex items-center justify-between py-3"
-          >
-            <div className="flex items-center">
-              <div className="space-y-1">
-                <p className="font-medium leading-none"><b>Hatsune Miku dice: </b>{palabraHoy.palabra}</p>
-              </div>
-            </div>
-          </div>
+          <p className="font-medium leading-none miku-p"><b>Hatsune Miku dice: </b>{palabraHoy.palabra}</p>
         ))}
-      </div>
     </div>
   )
 }

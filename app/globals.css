@@ -25,8 +25,16 @@ body {
 }
 
 .bg-palabra {
+  width: 576px;
+  height: 521px;
   color: rgb(var(--foreground-rgb));
-  background: white;
-  background-image: url('miku.png');
+  background-image: url(/_next/static/media/miku.f5c9febd.png);
   background-size: cover;
+  background-position: center;
+}
+
+.miku-p{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 521px; 
 }
