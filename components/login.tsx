@@ -84,27 +84,27 @@ export default async function Login() {
 async function handleSubmit() {
   //e.preventDefault();
   //var formData = new FormData(e.target);
-  let login
+  let login;
 
   try {
     //var email = formData.get("email");
     //var pass = formData.get("password");
+    var email = document.querySelector('#email') as HTMLInputElement | null;
+    var pass = document.querySelector('#password') as HTMLInputElement | null;
 
     if(email && pass){
-      var email = document.querySelector('#email').value;
-      var pass = document.querySelector('#password').value;
-      login = await sql`SELECT * FROM users where email = '${email}' and password = '${pass}'`
+      login = await sql`SELECT * FROM users where email = '${email.value}' and password = '${pass.value}'`;
     
-      let { rows: result } = login
+      let { rows: result } = login;
     
       if (result.length >= 1) {
-        var nam = result[0].name
+        var nam = result[0].name;
         sessionStorage.setItem("name", nam);
-        Refresh()
+        Refresh();
       }
     }
 
   } catch (e: any) {
-    console.log(e.message)
+    console.log(e.message);
   }
 }
