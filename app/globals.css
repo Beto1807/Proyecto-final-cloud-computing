@@ -28,7 +28,7 @@ body {
   width: 576px;
   height: 521px;
   color: rgb(var(--foreground-rgb));
-  background-image: url(/_next/static/media/miku.f5c9febd.png);
+  background-image: url('miku.png');
   background-size: cover;
   background-position: center;
 }
