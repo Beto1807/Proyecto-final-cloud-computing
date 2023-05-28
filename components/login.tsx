@@ -10,18 +10,18 @@ export default async function Login() {
     return (
       <div className="bg-white/30 p-12 shadow-xl ring-1 ring-gray-900/5 rounded-lg backdrop-blur-lg max-w-xl mx-auto w-full">
         <div className="flex justify-center space-x-5 pt-10 mt-10 border-t border-gray-300 w-full max-w-xl text-gray-600">
-          <form onSubmit={handleSubmit}>
-            <label htmlFor="#email">Correo</label>
-            <input className=""
+          <form className="w-full max-w-lg" onSubmit={handleSubmit}>
+            <label htmlFor="#email" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Correo</label>
+            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               placeholder="Ingrese correo"
               type={"email"}
               id="email"
               name="email"
             />
 
-            <label htmlFor="#password">Contraseña</label>
-            <input className=""
-              placeholder="Ingrese contraseña"
+            <label htmlFor="#password" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Contraseña</label>
+            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              placeholder="******************"
               type={"password"}
               id="password"
               name="password"
@@ -70,7 +70,7 @@ export default async function Login() {
             >
               <div className="flex items-center">
                 <div className="space-y-1">
-                  <p className="font-bold leading-none">{palabraHoy.palabra}</p>
+                  <p className="font-medium leading-none"><b>Miku dice: </b>{palabraHoy.palabra}</p>
                 </div>
               </div>
             </div>

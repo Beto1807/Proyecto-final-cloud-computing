@@ -53,8 +53,8 @@ export default async function Table() {
               />
               <div className="space-y-1">
                 <p className="font-medium leading-none">{user.name}</p>
-                <p className="text-sm"><b>Correo: </b> {user.email}</p>
-                <p className="text-sm"><b>Contraseña: </b> {user.password}</p>
+                <p className="text-sm"><b>Correo: </b>{user.email}</p>
+                <p className="text-sm"><b>Contraseña: </b>{user.password}</p>
               </div>
             </div>
             <p className="text-sm text-gray-500 bg-blue">{timeAgo(user.createdAt)}</p>
