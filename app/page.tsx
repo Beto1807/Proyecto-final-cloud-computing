@@ -26,7 +26,7 @@ export default function Home() {
           />
       </div>
 
-      <div className="flex items-center items-center justify-center space-x-2 w-full">
+      <div className="flex items-center w-full">
         <Suspense fallback={<TablePlaceholder />}>
           {/* @ts-expect-error Async Server Component */}
           <Table />
