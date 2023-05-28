@@ -19,8 +19,8 @@ const Player = () => {
   return (
     <div>
       <ReactAudioPlayer src={audioFile} autoPlay={isPlaying} controls />
-      <button onClick={play}>Play</button>
-      <button onClick={pause}>Pause</button>
+      <button onClick={play}>Reproducir</button>
+      <button onClick={pause}>Pausar</button>
     </div>
   );
 };
