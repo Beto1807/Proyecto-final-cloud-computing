@@ -11,8 +11,8 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: white;
-    background-image: url('bg.png');
-    background-size: cover;
+  background-image: url('bg.png');
+  background-size: cover;
 }
 
 .bg-blue {
@@ -22,4 +22,11 @@ body {
   padding: 6px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.bg-palabra {
+  color: rgb(var(--foreground-rgb));
+  background: white;
+  background-image: url('miku.png');
+  background-size: cover;
 }
