@@ -1,6 +1,5 @@
 import { sql } from '@vercel/postgres'
 import { timeAgo } from '@/lib/utils'
-import Image from 'next/image'
 import RefreshButton from './refresh-button'
 import { seed } from '@/lib/seed'
 
@@ -54,11 +53,11 @@ export default async function Table() {
               />
               <div className="space-y-1">
                 <p className="font-medium leading-none">{user.name}</p>
-                <p className="text-sm text-gray-500">Correo: {user.email}</p>
-                <p className="text-sm text-gray-500">Contraseña: {user.password}</p>
+                <p className="text-sm"><b>Correo: </b> {user.email}</p>
+                <p className="text-sm"><b>Contraseña: </b> {user.password}</p>
               </div>
             </div>
-            <p className="text-sm text-gray-500">{timeAgo(user.createdAt)}</p>
+            <p className="text-sm text-gray-500 bg-blue">{timeAgo(user.createdAt)}</p>
           </div>
         ))}
       </div>
