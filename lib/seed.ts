@@ -27,7 +27,7 @@ export async function seed() {
       `,
     sql`
           INSERT INTO users (name, password, email, image)
-          VALUES ('Jesús David Durán Carrillo', 'sda343', 'L19540487@chihuahua2.tecnm.mx', 'https://i.ibb.co/XJ2JRx3/Jesus.jpg')
+          VALUES ('Jesús David Durán Carrillo', 'cisco1234', 'L19540487@chihuahua2.tecnm.mx', 'https://i.ibb.co/XJ2JRx3/Jesus.jpg')
           ON CONFLICT (email) DO NOTHING;
       `,
     sql`
@@ -37,6 +37,8 @@ export async function seed() {
       `,
   ])
   console.log(`Seeded ${users.length} users`)
+
+  
 
   return {
     createTable,
