@@ -81,7 +81,7 @@ export default async function Login() {
   }
 }
 
-async function handleSubmit(e) {
+async function handleSubmit() {
   //e.preventDefault();
   //var formData = new FormData(e.target);
   let login
