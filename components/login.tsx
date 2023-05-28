@@ -1,6 +1,6 @@
 import { sql } from '@vercel/postgres'
 import ExpandingArrow from '@/components/expanding-arrow'
-import Refresh from './refresh-button'
+import {Refresh} from './refresh'
 import { seed } from '@/lib/seed'
 
 export default async function Login() {
