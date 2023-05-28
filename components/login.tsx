@@ -1,21 +1,17 @@
 import { sql } from '@vercel/postgres'
-import ExpandingArrow from '@/components/expanding-arrow'
-//import {Refresh} from './refresh'
 import { seed } from '@/lib/seed'
 
 export default async function Login() {
   let mikus;
 
   try {
-    mikus = await sql`SELECT * FROM MIKUWORDS where dia = DATE_PART('doy',CURRENT_DATE)`
+    mikus = await sql`SELECT * FROM mikuwords where dia = DATE_PART('doy',CURRENT_DATE)`
   } catch (e: any) {
-    if (e.message === `relation "MIKUWORDS" does not exist`) {
-      console.log(
-        'Table does not exist, creating and seeding it with dummy data now.'
-      )
-      // Table is not created ye
+    if (e.message === `relation "mikuwords" does not exist`) {
+      console.log('Table does not exist, creating and seeding it with dummy data now.')
+      // Table is not created yet
       await seed()
-      mikus = await sql`SELECT * FROM MIKUWORDS where dia = DATE_PART('doy',CURRENT_DATE)`
+      mikus = await sql`SELECT * FROM mikuwords where dia = DATE_PART('doy',CURRENT_DATE)`
     } else {
       throw e
     }
