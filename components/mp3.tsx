@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 import audioFile from '../public/audio.mp3';
