@@ -5,6 +5,7 @@ import Table from '@/components/table'
 import Login from '@/components/login'
 import TablePlaceholder from '@/components/table-placeholder'
 import ExpandingArrow from '@/components/expanding-arrow'
+import Player from '../components/mp3';
 
 export const runtime = 'edge'
 export const preferredRegion = 'home'
