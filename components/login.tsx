@@ -50,7 +50,7 @@ export default async function Login() {
         console.log(
           'Table does not exist, creating and seeding it with dummy data now.'
         )
-        // Table is not created yet
+        // Table is not created ye
         await seed()
         mikus = await sql`SELECT * FROM MIKUWORDS where dia = DATE_PART('doy',CURRENT_DATE)`
       } else {
