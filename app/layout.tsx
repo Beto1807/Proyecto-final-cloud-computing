@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 export const metadata = {
   title: 'Proyecto final',
   description:
-    'Una aplicación que te dice la palabra del día de Hatsune Miku.',
+    'Una web que te dice la palabra del día de Hatsune Miku.',
 }
 
 const inter = Inter({
