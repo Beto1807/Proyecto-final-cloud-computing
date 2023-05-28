@@ -14,9 +14,6 @@ export const dynamic = 'force-dynamic'
 export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-center">
-      
-      
-
       <h1 className="pt-6 pb-4 bg-gradient-to-br from-black via-[#171717] to-[#575757] bg-clip-text text-center text-4xl font-bold tracking-tight text-transparent">
         Las palabras del día de 
       </h1> 
