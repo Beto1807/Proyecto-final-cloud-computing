@@ -16,6 +16,7 @@ export default async function Login() {
           Iniciar sesión
           <ExpandingArrow />
         </Link>
+        <RefreshButton />
       </div>
     </div>
   )

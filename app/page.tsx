@@ -15,6 +15,8 @@ export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-center">
       
+      
+
       <h1 className="pt-6 pb-4 bg-gradient-to-br from-black via-[#171717] to-[#575757] bg-clip-text text-center text-4xl font-bold tracking-tight text-transparent">
         Las palabras del día de 
       </h1> 
@@ -28,15 +30,20 @@ export default function Home() {
       </div>
 
       <div className="flex items-center w-screen">
+      <Suspense fallback={<TablePlaceholder />}>
+          {/* @ts-expect-error Async Server Component */}
+          <Login />
+        </Suspense>
+        
         <Suspense fallback={<TablePlaceholder />}>
           {/* @ts-expect-error Async Server Component */}
           <Table />
         </Suspense>
+      </div>
 
-        <Suspense fallback={<TablePlaceholder />}>
-          {/* @ts-expect-error Async Server Component */}
-          <Login />
-        </Suspense>
+      <div>
+        <h1>Reproductor MP3</h1>
+        <Player />
       </div>
       
       <div className="sm:absolute sm:bottom-0 w-full px-20 py-10 flex justify-between">
@@ -69,12 +76,6 @@ export default function Home() {
           <p className="font-light">Código</p>
         </Link>
       </div>
-      
-      <div>
-        <h1>Reproductor MP3</h1>
-        <Player />
-      </div>
-      
     </main>
   )
 }
