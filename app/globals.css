@@ -19,7 +19,7 @@ body {
 
 .bg-blue {
   background-color: #00ffff45;
-  color: black;
+  color: black !important; 
   border-radius: 16px;
   padding: 6px;
 }
