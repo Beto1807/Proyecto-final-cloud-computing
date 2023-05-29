@@ -44,6 +44,11 @@ export async function seed() {
           VALUES ('Alexis Sebastián Pereira Luján', 'miku', 'L19550833@chihuahua2.tecnm.mx', 'https://i.ibb.co/M6344Mb/Alexis.jpg')
           ON CONFLICT (email) DO NOTHING;
       `,
+    sql`
+      INSERT INTO users (name, password, email, image)
+      VALUES ('Mario Alonso Meza Alvidrez', 'hola', 'L19550812@chihuahua2.tecnm.mx', 'https://i.ibb.co/FY7mXRV/Mario.png')
+      ON CONFLICT (email) DO NOTHING;
+      `,
   ])
   console.log(`Seeded ${users.length} users`)
 
